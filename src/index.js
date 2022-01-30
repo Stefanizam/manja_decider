@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { manjaReducer } from './reducers/manjaReducer';
 import App from './App';
+import "./scss/global.scss";
 import 'bootstrap/dist/css/bootstrap.css';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';

@@ -1,14 +1,11 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 export const Header = (props) => {
-    const showAddManjaModal = useSelector(theState => theState.showAddManjaModal)
     const dispatch = useDispatch();
 
-    console.log(showAddManjaModal);
-
     const showNewManjaModal = () => {
-        dispatch({ type: "SHOW_MANJA_MODAL", payload: { show: true } })
+        dispatch({ type: "SHOW_MANJA_MODAL", payload: { show: true, type: "new" } })
     }
 
     return (

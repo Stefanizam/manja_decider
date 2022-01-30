@@ -3,40 +3,43 @@
     "name": "Мусака",
     "id": "0001",
     "description": "Печено мелено месо, со танко сечени парчиња компир",
-    "newDate": "2022-01-29T13:02:32.751Z",
-    "oldDate": "2022-01-23T13:02:32.751Z",
+    "newDate": "2022-01-30T13:02:32.751Z",
     "imageUrl": "http://migusto.mk/wp-content/uploads/2013/03/musaka-mama.jpg"
   },
   {
     "name": "Полнети пиперки",
     "id": "0002",
     "description": "Печени пиперки полнети со запржено мелено месо",
-    "newDate": "2022-01-24T14:02:32.751Z",
-    "oldDate": "2022-01-17T13:02:32.751Z",
+    "newDate": "2022-01-26T14:02:32.751Z",
     "imageUrl": "https://moemeni.mk/wp-content/uploads/2016/07/polneti-piperki.jpg"
   },
   {
     "name": "Компир Манџа",
     "id": "0003",
     "description": "Манџа со сецкани парчиња компир",
-    "newDate": "2022-01-25T13:02:32.751Z",
-    "oldDate": "2022-01-20T13:02:32.751Z",
+    "newDate": "2022-01-22T13:02:32.751Z",
     "imageUrl": "https://moirecepti.mk/content/uploads/2015/09/nas-7c76b8.jpg"
+
   },
   {
     "name": "Пржени компири и пилешко",
     "id": "0004",
     "description": "Пржени компири и печен пилешки стек",
-    "newDate": "2022-01-16T13:02:32.751Z",
-    "oldDate": "2022-01-12T13:02:32.751Z",
+    "newDate": "2022-01-19T13:02:32.751Z",
     "imageUrl": "https://images.pexels.com/photos/1893556/pexels-photo-1893556.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
   },
   {
     "name": "Сарма (Лозов)",
     "id": "0005",
     "description": "Мелено месо, обвиено во лозов лист",
-    "newDate": "2022-01-11T13:02:32.751Z",
-    "oldDate": "2022-01-09T13:02:32.751Z",
+    "newDate": "2022-01-14T13:02:32.751Z",
     "imageUrl": "https://adiblogmk.com/wp-content/uploads/2017/10/Sarma-750x563.jpg"
+  },
+  {
+    "name": "Сарма (Зелка)",
+    "id": "0006",
+    "description": "Мелено месо, обвиено во лист од кисела зелка",
+    "newDate": "2022-01-11T13:02:32.751Z",
+    "imageUrl": "https://d1uz88p17r663j.cloudfront.net/resized/7e8fe1c190017dde6ad8c99681dd8c2e_WhatsApp_Image_2020-11-27_at_4.50.20_PM_944_531.jpeg"
   }
 ]

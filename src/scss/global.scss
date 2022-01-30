@@ -19,25 +19,105 @@ body {
   padding: 3rem;
 }
 
-.manja-container {
-  background-color: white;
+.manja-content {
+  width: 95%;
+  z-index: 10;
+}
+
+.manja-options {
+  height: 118px;
+  width: 5%;
   display: flex;
-  text-align: left;
-  background-color: rgb;
-  border-radius: 6px;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 5;
+
+  animation-name: btn-slide-in;
+  animation-duration: 0.25s;
+  animation-iteration-count: 1;
+}
+
+@keyframes btn-slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.manja-opt-btn {
+  margin: 0.25rem 0rem;
+  padding: 0.25rem !important;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.selected-manja {
+  background-color: #0275d8;
+  color: white;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .manja-image {
   margin-top: 0.25rem;
   margin-right: 0.75rem;
   border-radius: 5px;
-  border: 1px solid lightgray;
+  box-shadow: 0px 10px 10px -4px rgba(0, 0, 0, 0.25);
   height: 80px;
   width: 80px;
   background-position-x: center;
   background-size: cover;
+  transition: transform 0.25s;
+  transform-origin: bottom right;
 }
 
-.header button {
-  
+.time-badge {
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 16px;
+  height: 16px;
+  margin-top: 0.2rem;
 }
+
+// EditManjaModal
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contents {
+  animation-name: modal-slide-in;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  cursor: auto;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+
+  input {
+    min-width: 360px;
+  }
+  textarea {
+    min-width: 360px;
+  }
+}
+
+@keyframes modal-slide-in {
+  0% {
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+// EditManjaModal ^^^
