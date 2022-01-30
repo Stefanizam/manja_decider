@@ -1,15 +1,14 @@
 import "./scss/global.scss";
 
+import { Header } from "./components/Header/Header";
+import { MainContents } from "./components/MainContents/MainContents"
+// import returnDateFormat from "./helpers/returnDateFormat";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <div className="shadow-lg mb-5 bg-white rounded">
-          <h1 className=" text-center py-5 ">MANJA DECIDER</h1>
-        </div>
-      </header>
-      <body>
-      </body>
+      <Header />
+      <MainContents />
     </div>
   );
 }
