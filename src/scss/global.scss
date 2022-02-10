@@ -6,9 +6,9 @@ body {
 }
 
 .header {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: white;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.75);
-  color: white;
+  color: rgb(50, 50, 50);
   padding: 0rem 4rem 0rem 4rem;
 }
 
@@ -21,7 +21,6 @@ body {
 
 .manja-content {
   width: 95%;
-  z-index: 10;
 }
 
 .manja-options {
@@ -46,6 +45,27 @@ body {
   }
 }
 
+.deleted-manja {
+  transform: scale(0, 0);
+  opacity: 0;
+}
+
+.undeleted {
+  animation-name: new-manja;
+  animation-duration: 0.5s;
+}
+
+@keyframes new-manja {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  0% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
 .manja-opt-btn {
   margin: 0.25rem 0rem;
   padding: 0.25rem !important;
@@ -57,6 +77,11 @@ body {
   background-color: #0275d8;
   color: white;
   transition: background-color 0.5s, color 0.5s;
+  .manja-image {
+    transform: translateX(-40px) scale(2, 2);
+    z-index: 15;
+    transition: transform 0.25s;
+  }
 }
 
 .manja-image {
@@ -68,8 +93,6 @@ body {
   width: 80px;
   background-position-x: center;
   background-size: cover;
-  transition: transform 0.25s;
-  transform-origin: bottom right;
 }
 
 .time-badge {
